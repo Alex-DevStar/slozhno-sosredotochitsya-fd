@@ -1,5 +1,160 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
+.header {
+  height: 100vh;
+  min-height: 668px;
+  color: #fff;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.rec {
+  font-family: "IBM Plex Mono", "Courier New", Courier, monospace;
+  text-transform: uppercase;
+  color: var(--accent-color);
+  gap: 3px;
+  display: flex;
+  align-items: center;
+  margin-block-start: 0.25rem;
+  margin-inline-end: 0.65rem;
+}
+
+.dot {
+  position: relative;
+  display: inline-block;
+  margin-inline-end: 0.6rem;
+  margin-inline-start: 0.67rem;
+}
+
+.dot::before {
+  content: "";
+  display: block;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  filter: drop-shadow(0 0 4px var(--accent-color));
+}
+
+.dot::after {
+  content: "";
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  width: 25px;
+  height: 25px;
+  border-top: 1px solid var(--accent-color);
+  border-right: 1px solid var(--accent-color);
+}
+
+.header__theme-menu-button {
+  font-family: "IBM Plex Mono", "Courier New", Courier, monospace;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  background-color: transparent;
+  color: var(--accent-color);
+  border: none;
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid var(--accent-color);
+}
+
+.header__theme-menu-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-block-start: 2.7rem;
+    margin-inline-end: 1.1rem;
+}
+
+.title {
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  color: var(--title-text-color);
+  font-family: "IBM Plex Mono", "Courier New", Courier, monospace;
+  text-shadow: var(--text-shadow);
+  line-height: 82.5%;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.description__text-start {
+  background-color: var(--accent-color);
+  color: var(--description-text-color);
+  font-family: "IBM Plex Mono", "Courier New", Courier, monospace;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 23.4px;
+  margin-block-end: 0;
+}
+
+.description__text-end {
+  background-color: var(--accent-color);
+  color: var(--description-text-color);
+  font-family: "IBM Plex Mono", "Courier New", Courier, monospace;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 23.4px;
+  margin-block-start: 0;
+}
+
 .page {
-  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  background-image: var(--bg-image);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: #000028;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+}
+
+.section__title {
+  color: var(--accent-color);
+  font-family: "IBM Plex Mono", "Courier New", Courier, monospace;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 23.4px;
+  background-color: transparent;
+}
+
+.section__subtitle {
+  color: var(--description-text-color);
+  background-color: var(--accent-color);
+  font-family: "IBM Plex Mono", "Courier New", Courier, monospace;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 23.4px;
+}
+
+.section__title-advice {
+  color: var(--description-text-color);
+  background-color: var(--accent-color);
+  font-family: "IBM Plex Mono", "Courier New", Courier, monospace;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23.4px;
+}
+
+.section__text {
+  color: var(--section-text-color);
+  background-color: transparent;
+  font-family: "IBM Plex Mono", "Courier New", Courier, monospace;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23.4px;
 }
