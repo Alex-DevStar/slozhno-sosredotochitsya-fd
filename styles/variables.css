@@ -1,3 +1,13 @@
 :root {
+  --font-family: "IBM Plex Mono", "Courier New", Courier, monospace;
+  --font-size-base: 18px;
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+
   --bg-image: url('../images/cover-image-dark.png');
+  --title-text-color: #DB00FF;
+  --description-text-color: #000028;
+  --accent-color: #FF0070;
+  --section-text-color: #F1B2CE;
+  --section-title-color: #FF0070;
 }
