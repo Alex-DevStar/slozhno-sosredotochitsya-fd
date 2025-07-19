@@ -36,7 +36,7 @@
   color: var(--accent-color);
   gap: 10px;
   top: 2px;
-  display: flex;
+  display: var(--rec);
   align-items: center;
   position: absolute;
   right: 9px;
@@ -263,6 +263,10 @@
     justify-content: space-evenly;
   }
 
+  .title {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+
   .description {
     width: 50%;
     align-self: flex-end;
@@ -312,7 +316,20 @@
     grid-row: 3 / 4;
     grid-column: 2 / 4;
   }
+
+  .footer_title {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
 }
 
 @media (width >= 1024px) {
+  .section__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .section__pair {
+    display: flex;
+    flex-direction: column;
+  }
 }
