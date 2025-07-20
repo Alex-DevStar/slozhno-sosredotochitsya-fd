@@ -150,7 +150,7 @@
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  background-color: #000028;
+  background-color: var(--bg-color);
   margin-inline: 10px; /* тут обратить внимание возможна коррекция */
 }
 
@@ -256,6 +256,7 @@
 }
 
 @media (width >= 768px) {
+
   .header {
     padding-inline-end: 20px;
     display: flex;
@@ -277,11 +278,11 @@
     grid-auto-columns: max(276px) auto;
   }
 
-  .section__grid-left {
+  .section__how-to {
     grid-column: 1 / 2;
   }
 
-  .section__grid-right {
+  .section__advices {
     grid-column: 2 / 3;
   }
 
@@ -323,6 +324,7 @@
 }
 
 @media (width >= 1024px) {
+
   .section__content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
