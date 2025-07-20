@@ -4,6 +4,20 @@
   переключая тему
 */
 
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg-image: url("../images/cover-image-light.png");
+    --title-text-color: #ffc2e6;
+    --description-text-color: #353430;
+    --accent-color: #ff8dcb;
+    --section-text-color: #353430;
+    --section-title-color: #353430;
+    --bg-color: #FFC2E6;
+    --rec: none;
+  }
+}
+
+
 :root.theme-light {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
