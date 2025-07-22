@@ -17,4 +17,8 @@
   --section-title-color: #ff0070;
   --bg-color: #000028;
   --rec: flex;
+  --decorated-color: #FF0070;
+  --decorated-color-link: #F1B2CE;
+  --decorated-color-transparent: #FF007066;
+
 }
